@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 350px;
+            backdrop-filter: blur(10px);
+        }
+
+        .heart {
+            width: 60px;
+            height: 60px;
+            background-color: #ff4d4d;
+            position: relative;
+            margin: 0 auto 20px;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+        }
+
+        .heart::after {
+            left: 30px;
+        }
+
+        .heart::before {
+            top: -30px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ffe6e6;
+            font-style: italic;
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart"></div>
+        <h1>Happy Valentine's Day, My Love! 💘</h1>
+        <p>Thank you for choosing yes. I love you so much, my love. I'm sorry because wala akong mabigay, 
+            I don't have money para ka man lang sana malibre kita. Gusto ko din mag hand-made ng mga cards kaso 
+            I don't have time. Sorry baby, I love you so much forever. Mwah! 😘
+        </p>
+        <p class="signature">- From your Drixzen ❤️</p>
+    </div>
+</body>
+</html>
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;">
+        <iframe src="blooming.html" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
